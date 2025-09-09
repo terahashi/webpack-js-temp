@@ -1,0 +1,45 @@
+{
+  "name": "webpack-tutorial",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "cleanup": "npx rimraf ./public",
+    "dev": "npm run webpack:dev && npm run webpack:server",
+    "webpack:server": "npx webpack-dev-server --config ./webpack.dev.js",
+    "webpack:dev": "npm run cleanup && npx webpack --config ./webpack.dev.js",
+    "build": "npm run cleanup && npx webpack --config ./webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/eslint-parser": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@types/minimatch": "^6.0.0",
+    "autoprefixer": "^10.4.21",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "eslint": "^9.35.0",
+    "eslint-webpack-plugin": "^5.0.2",
+    "html-loader": "^5.1.0",
+    "html-minifier": "^4.0.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss-loader": "^8.2.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5",
+    "source-map": "^0.7.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.3",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "jquery": "^3.4.1",
+    "regenerator-runtime": "^0.13.3"
+  }
+}

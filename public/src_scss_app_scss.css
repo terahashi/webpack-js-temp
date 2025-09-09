@@ -1,0 +1,26 @@
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \******************************************************************************************************************************************************/
+h1 {
+  font-size: 2em;
+  transition: all 0.3s;
+  color: green;
+}
+h1:hover {
+  transform: translateX(50px);
+  color: red;
+}
+
+.imageClass {
+  width: 200px;
+  height: auto;
+}
+
+.bg {
+  background-image: url(images/webpack-logo.svg);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=src_scss_app_scss.css.map*/
